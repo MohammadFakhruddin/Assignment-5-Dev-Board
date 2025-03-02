@@ -37,7 +37,7 @@ for (let btn of button) {
         const convertedTaskAssigned = parseInt(taskAssigned.innerText);
         taskAssigned.innerText = convertedTaskAssigned - 1;
 
-        const checkList = document.getElementById('check-list');
+        const checkList = document.getElementById('check-mark');
         const convertedCheckList = parseInt(checkList.innerText);
         checkList.innerText = convertedCheckList + 1;
 
@@ -60,7 +60,7 @@ for (let btn of button) {
 
 const colors = ['bg-red-100', 'bg-green-100', 'bg-blue-100', 'bg-yellow-100']
 let i = 0;
-document.getElementById('theme-btn')
+document.getElementById('theme-button')
     .addEventListener('click', function () {
         document.body.classList.remove(...colors);
         document.body.classList.add(colors[i]);
